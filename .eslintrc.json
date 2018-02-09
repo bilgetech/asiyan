@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-console": "off",
+    "prefer-destructuring": "off",
+    "no-param-reassign": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 100
+      }
+    ],
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"]
+  }
+}
