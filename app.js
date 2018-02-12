@@ -2,8 +2,20 @@
 
 const deployd = require('deployd');
 const dotenv = require('dotenv');
+const program = require('commander');
 
-dotenv.config();
+program
+  .version('0.1.0')
+  .option('-e, --dotenv <file>', 'Path to your .env file')
+  .parse(process.argv);
+
+const dotenvOpts = {};
+
+if (program.dotenv) {
+  dotenvOpts.path = program.dotenv;
+}
+
+dotenv.config(dotenvOpts);
 
 const port = process.env.PORT || 3434;
 const db = {
