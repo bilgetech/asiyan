@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"to": {
+			"name": "to",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "to",
+			"order": 0
+		},
+		"from": {
+			"name": "from",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "from",
+			"order": 1
+		},
+		"body": {
+			"name": "body",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "body",
+			"order": 2
+		},
+		"sentAt": {
+			"name": "sentAt",
+			"type": "date",
+			"typeLabel": "date",
+			"required": false,
+			"id": "sentAt",
+			"order": 3
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "date",
+			"typeLabel": "date",
+			"required": false,
+			"id": "createdAt",
+			"order": 4
+		}
+	}
+}
