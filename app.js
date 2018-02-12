@@ -1,9 +1,11 @@
+#!/usr/bin/env node
+
 const deployd = require('deployd');
 const dotenv = require('dotenv');
 
 dotenv.config();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3434;
 const db = {
   port: process.env.DB_PORT || 27017,
   host: process.env.DB_HOST || '127.0.0.1',
@@ -13,7 +15,7 @@ const db = {
     password: process.env.DB_PASSWORD,
   },
 };
-const env = process.env.ENV;
+const env = process.env.ENV || 'production';
 
 const dpd = deployd({ port, db, env });
 

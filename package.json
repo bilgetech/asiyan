@@ -10,16 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/bilgetech/asiyan.git"
   },
-  "keywords": [
-    "guvercin",
-    "asiyan",
-    "relay",
-    "deployd",
-    "backend",
-    "sms",
-    "over",
-    "api"
-  ],
+  "keywords": ["guvercin", "asiyan", "relay", "deployd", "backend", "sms", "over", "api"],
+  "bin": { "myapp": "./app.js" },
   "author": "Ahmet Safa Orhan",
   "license": "MIT",
   "bugs": {
