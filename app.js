@@ -12,9 +12,21 @@ const db = {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
   },
-  env: process.env.ENV,
 };
+const env = process.env.ENV;
 
-const dpd = deployd({ port, db });
+const dpd = deployd({ port, db, env });
 
 dpd.listen();
+
+dpd.on('listening', () => {
+  console.log('Server is listening');
+});
+
+dpd.on('error', (err) => {
+  console.error(err);
+  process.nextTick(() => {
+    // Give the server a chance to return an error
+    process.exit();
+  });
+});
