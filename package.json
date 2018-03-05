@@ -1,6 +1,6 @@
 {
   "name": "asiyan",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Deployd powered node backend of guvercin.",
   "main": "app.js",
   "scripts": {

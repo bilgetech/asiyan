@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 const program = require('commander');
 
 program
-  .version('0.1.0')
+  .version('0.1.2')
   .option('-e, --dotenv <file>', 'Path to your .env file')
   .parse(process.argv);
 
