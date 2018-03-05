@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+process.chdir(__dirname);
+
 const deployd = require('deployd');
 const dotenv = require('dotenv');
 const program = require('commander');
@@ -34,7 +36,7 @@ const dpd = deployd({ port, db, env });
 dpd.listen();
 
 dpd.on('listening', () => {
-  console.log('Server is listening');
+  console.log('Server is listening on port: ', port);
 });
 
 dpd.on('error', (err) => {

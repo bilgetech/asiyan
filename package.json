@@ -1,6 +1,6 @@
 {
   "name": "asiyan",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deployd powered node backend of guvercin.",
   "main": "app.js",
   "scripts": {
@@ -10,18 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/bilgetech/asiyan.git"
   },
-  "keywords": [
-    "guvercin",
-    "asiyan",
-    "relay",
-    "deployd",
-    "backend",
-    "sms",
-    "over",
-    "api"
-  ],
+  "keywords": ["guvercin", "asiyan", "relay", "deployd", "backend", "sms", "over", "api"],
   "bin": {
-    "myapp": "./app.js"
+    "asiyan": "./app.js"
   },
   "author": "Ahmet Safa Orhan",
   "license": "MIT",
