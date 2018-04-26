@@ -32,7 +32,7 @@ DB_PASSWORD=t0p_s3cr3t
 
 ## Contributing
 
-All kind of contribution is welcomed :)
+All kind of contribution is welcome :)
 
 ## License
 
